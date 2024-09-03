@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Dynamic To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="task-input" placeholder="What do you need to do?">
+            <button id="add-task-btn">Add</button>
+        </div>
+        <button id="show-tasks-btn">Show My To-Do List</button>
+        <ul id="task-list" class="hidden"></ul>
+        <button id="toggle-guide-btn">Show User Guide</button>
+        <div id="user-guide" class="hidden">
+            <h2>User Guide</h2>
+            <p><strong>Adding a New Task:</strong> Type your task in the input box and click the "Add" button.</p>
+            <p><strong>Showing Your To-Do List:</strong> Click the "Show My To-Do List" button to view or hide your saved tasks.</p>
+            <p><strong>Marking a Task as Done:</strong> Click the check sign (✓) next to a task to mark it as done and remove it from your list.</p>
+            <h3>Button Functionality Recap:</h3>
+            <ul>
+                <li><strong>Add Button:</strong> Adds a new task.</li>
+                <li><strong>Show My To-Do List Button:</strong> Shows or hides your tasks.</li>
+                <li><strong>Check Sign (✓) Button:</strong> Deletes a task once completed.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

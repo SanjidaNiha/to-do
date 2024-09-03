@@ -1,0 +1,180 @@
+/* Base Styles */
+body {
+    background-color: #f3e5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #7b1fa2;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ba68c8;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    min-width: 0; /* Ensures input box resizes properly */
+}
+
+#add-task-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #8e24aa;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+#add-task-btn:hover {
+    background-color: #6a1b9a;
+}
+
+#show-tasks-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #8e24aa;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#show-tasks-btn:hover {
+    background-color: #6a1b9a;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#task-list li {
+    background-color: #e1bee7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4a148c;
+    font-size: 1rem;
+    word-break: break-word; /* Prevents text from overflowing */
+}
+
+.done-btn {
+    border: none;
+    background-color: #d81b60;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px 8px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.done-btn:hover {
+    background-color: #c2185b;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .app-container {
+        padding: 15px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    #task-input, #add-task-btn, #show-tasks-btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #show-tasks-btn {
+        padding: 8px 15px;
+    }
+
+    #task-list li {
+        font-size: 0.9rem;
+    }
+
+    .done-btn {
+        padding: 4px 6px;
+        font-size: 0.8rem;
+    }
+}
+/* Additional Styles for User Guide */
+#user-guide {
+    margin-top: 15px;
+    background-color: #f3e5f5;
+    padding: 15px;
+    border: 1px solid #ba68c8;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#user-guide h2 {
+    color: #7b1fa2;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#user-guide p,
+#user-guide ul {
+    color: #4a148c;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+#toggle-guide-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #8e24aa;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+#toggle-guide-btn:hover {
+    background-color: #6a1b9a;
+}
